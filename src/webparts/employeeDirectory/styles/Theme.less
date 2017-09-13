@@ -1,0 +1,89 @@
+.CardCollection{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .CardContainer{
+        margin:10px;
+        max-width:210px;
+        width:210px;
+    }   
+}
+.DisplayNone{
+    display:none;
+}
+.BackButton{
+
+}
+.EmployeeDetails{
+    position:relative;
+    width:100%;
+    max-width:1440px;
+    margin: 0 auto;
+    
+    
+    .ProfilePicture{
+        display:inline-block;
+        img{
+            border-radius: 110px;
+
+        }
+    }
+    .EmployeeNameContainer{
+        display:inline-block;
+        position:absolute;
+        top:0;
+        left:220px;
+    }
+    .ReportToContainer{
+        display:inline-block;
+        position: absolute;
+        top:75px;
+        right:0px;
+        width:175px;
+        border-radius: 3px;
+        background-color:#eee;
+        border:1px solid #eaeaea;
+        h3{
+            padding-left:5px;
+        }
+        .reportListContainer{
+            display:flex;
+            flex-direction: column;
+            padding-left:12px;
+            .ReportToLineContainer{
+                display:flex;
+                cursor: pointer;
+
+                .reportPicture{
+                    display:inline-block;
+                }
+                .reportName{
+                    display:inline-block;
+                    padding-left:5px;
+                    color: #00A3E0;
+                    &:hover{
+                        color:#0093E0;
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+            
+        }
+
+    }
+    .ContactContainer{
+        display:block;
+        width:300px;
+        .ContactTable{
+            margin: 0 auto;
+        }
+        .tablePicture{
+            width:33%;
+            text-align: center;
+        }
+        .tableData{
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{8973F0E1-831F-4B10-B135-061561F5A06C}"
+            Name="EDirUserName"
+            DisplayName="User Name"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="TRUE"
+            Group="EDirCT" />
+    
+    <Field ID="{920B816C-A325-452C-ADDA-8E468E2689A1}"
+            Name="EDirFirstName"
+            DisplayName="First Name"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="TRUE"
+            Group="EDirCT" />
+    <Field ID="{9C2E78BE-033F-4347-96F4-C1D13FB8F73B}"
+            Name="EDirLastName"
+            DisplayName="Last Name"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="TRUE"
+            Group="EDirCT" />
+    
+     <Field ID="{D2571263-17C0-4D72-B0D7-0690EDADE7FC}"
+            Name="EDirEmail"
+            DisplayName="Email"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="TRUE"
+            Group="EDirCT" />
+    
+    <Field ID="{CE120D5F-3F01-4EFF-92ED-2097CE49ECE0}"
+            Name="EDirPhone"
+            DisplayName="Phone Number"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="TRUE"
+            Group="EDirCT" />
+    
+    <Field ID="{C911302A-6F60-40E0-82A5-E5F1053D80BF}"
+            Name="EDirReports"
+            DisplayName="Reports To"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="TRUE"
+            Group="EDirCT" />
+    
+    <Field ID="{CD38A8A6-B0EE-44A4-92D0-C1990BC67025}"
+            Name="EDirPosition"
+            DisplayName="Position Title"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="TRUE"
+            Group="EDirCT" />
+    
+    <Field ID="{D20F982C-8F97-4005-84EB-2B632FFA699E}"
+            Name="EDirAltPhone"
+            DisplayName="Secondary Phone Number"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="FALSE"
+            Group="EDirCT" />
+    
+    <Field ID="{BF55BED7-0A7D-4D71-B9B2-0B13C066680D}"
+            Name="EDirPicURL"
+            DisplayName="Picture Url"
+            Type="URL"
+            List="Lists/EmployeeDirectory"
+            Required="FALSE"
+            Group="EDirCT" />
+   <Field ID="{DEE7562E-6B40-40E6-87FF-1A6FB72838FF}"
+            Name="EDirEmpID"
+            DisplayName="Employee ID"
+            Type="Text"
+            List="Lists/EmployeeDirectory"
+            Required="TRUE"
+            Group="EDirCT" />
+    
+    <ContentType ID="0x0100468E235F299D4434AB102A4BB18AC8CC" 
+            Name="Employee Directory Content Types" 
+            Group="EDirCT" 
+            Description="CT that is used for react app default props when none are provided.">
+        <FieldRefs>
+            <FieldRef ID="{8973F0E1-831F-4B10-B135-061561F5A06C}" /> 
+            <FieldRef ID="{920B816C-A325-452C-ADDA-8E468E2689A1}" /> 
+            <FieldRef ID="{9C2E78BE-033F-4347-96F4-C1D13FB8F73B}" /> 
+            <FieldRef ID="{D2571263-17C0-4D72-B0D7-0690EDADE7FC}" /> 
+            <FieldRef ID="{CE120D5F-3F01-4EFF-92ED-2097CE49ECE0}" />
+            <FieldRef ID="{C911302A-6F60-40E0-82A5-E5F1053D80BF}" />
+            <FieldRef ID="{CD38A8A6-B0EE-44A4-92D0-C1990BC67025}" />
+            <FieldRef ID="{D20F982C-8F97-4005-84EB-2B632FFA699E}" />
+            <FieldRef ID="{BF55BED7-0A7D-4D71-B9B2-0B13C066680D}" />
+            <FieldRef ID="{DEE7562E-6B40-40E6-87FF-1A6FB72838FF}" />
+
+        </FieldRefs>
+    </ContentType> 
+
+    <ListInstance 
+            CustomSchema="EmployeeDirectory.xml"
+            TemplateType="100"
+            Title="Employee Directory" 
+            Description="Employee Directory Information List"
+            Url="Lists/Directory"
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            >
+    </ListInstance>
+
+</Elements>

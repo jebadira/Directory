@@ -1,0 +1,49 @@
+<List xmlns:ows="Microsoft SharePoint" Title="Employee Directory" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Directory" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentTypeRef ID="0x0100468E235F299D4434AB102A4BB18AC8CC" />
+    </ContentTypes>
+    <Fields></Fields>
+    <Views>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="Title" />
+          <FieldRef Name="EDirUserName"></FieldRef>
+          <FieldRef Name="EDirFirstName" />
+          <FieldRef Name="EDirLastName" />
+          <FieldRef Name="EDirEmail" />
+          <FieldRef Name="EDirPhone" />
+          <FieldRef Name="EDirReports"/>
+          <FieldRef Name="EDirPosition"/>
+          <FieldRef Name="EDirAltPhone"/>
+          <FieldRef Name="EDirPicURL"/>
+          <FieldRef Name="EDirEmpID" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" />
+          </OrderBy>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
+
+
+
+
+
+
+
+
+

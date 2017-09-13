@@ -1,0 +1,25 @@
+{
+  "solution": {
+    "name": "employee-directory-client-side-solution",
+    "id": "13e5df3c-195f-4944-8a33-8810b91ca2e8",
+    "version": "1.0.0.8",
+     "features": [{
+      "title": "directory-deployment-webpart-client-side-solution",
+      "description": "directory-asset-deployment-webpart-client-side-solution",
+      "id": "e2fe3992-7546-4e1b-8eac-2cc5d6777f04",
+      "version": "1.0.0.1",
+      "assets": {        
+        "elementManifests": [
+          "elements.xml"
+        ],
+        "elementFiles":[
+          "EmployeeDirectory.xml"
+         
+        ]
+      }
+    }]
+  },
+  "paths": {
+    "zippedPackage": "solution/employee-directory.sppkg"
+  }
+}
